@@ -53,3 +53,50 @@ function isit() {
 
   new TypeWriter(txtElement, words, wait);
 }
+
+// Scroll Effect
+
+const onScroll = event => {
+  const sections = document.querySelectorAll(".after_effect");
+  const fixNav = document.querySelector(".nav");
+  const scrollPos =
+    window.pageYOffset ||
+    document.documentElement.scrollTop ||
+    document.body.scrollTop;
+
+  for (let i = 0; i < sections.length; i++) {
+    const currLink = sections[i];
+    const val = currLink.getAttribute("href");
+    const refElement = document.querySelector(val);
+    const logo = document.querySelector(".logo");
+
+    if (sections[0].classList.contains("after_block")) {
+      logo.innerHTML = "Moon's";
+    } else if (sections[1].classList.contains("after_block")) {
+      logo.innerHTML = "About";
+    } else if (sections[2].classList.contains("after_block")) {
+      logo.innerHTML = "Product";
+    } else {
+      logo.innerHTML = "CONTACT";
+    }
+
+    if (
+      refElement.offsetTop <= scrollPos &&
+      refElement.offsetTop + refElement.offsetHeight > scrollPos
+    ) {
+      fixNav.classList.add("fix");
+      document.querySelector(".after_effect").classList.remove("after_block");
+      currLink.classList.add("after_block");
+
+      if (currLink.classList.contains("fixed")) {
+        fixNav.classList.remove("fix");
+      }
+    } else {
+      currLink.classList.remove("after_block");
+    }
+  }
+};
+
+window.addEventListener("load", onScroll);
+
+window.document.addEventListener("scroll", onScroll);
