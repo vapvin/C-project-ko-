@@ -2,11 +2,11 @@
 /*여백 초기화*/
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: "Roboto", "Nanum Gothic", sans-serif;
+  font-family: "Roboto", "Nanum Gothic", sans-serif;
 }
 
 body,
@@ -37,19 +37,19 @@ button,
 form,
 figure,
 figcaption {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*a링크초기화*/
 
 a {
-	color: #000;
-	text-decoration: none;
+  color: #000;
+  text-decoration: none;
 }
 
 a:hover {
-	color: #eee;
+  color: #eee;
 }
 
 /*폰트 초기화*/
@@ -60,14 +60,14 @@ textarea,
 select,
 button,
 table {
-	font-family: "Nanum Gothic", AppleSDGothicNeo-Regular;
+  font-family: "Roboto", "Nanum Gothic", "Caveat", cursive, sans-serif;
 }
 
 /*폰트스타일 초기화*/
 
 em,
 address {
-	font-style: normal;
+  font-style: normal;
 }
 
 /*리스트 스타일 논*/
@@ -75,7 +75,7 @@ address {
 ul,
 li,
 ol {
-	list-style: none;
+  list-style: none;
 }
 
 /*제목태그 초기화*/
@@ -86,6 +86,6 @@ h3,
 h4,
 h5,
 h6 {
-	font-size: 16px;
-	font-weight: normal;
+  font-size: 16px;
+  font-weight: normal;
 }
