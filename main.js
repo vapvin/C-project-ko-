@@ -1,3 +1,13 @@
+const covers1 = document.querySelector(".covers1");
+const covers2 = document.querySelector(".covers2");
+const nones = document.querySelector(".none_wrap");
+
+const firstPage = () => {
+  covers1.classList.add("cover");
+  covers2.classList.add("cover");
+  nones.classList.add("block_wrap");
+};
+
 class TypeWriter {
   constructor(txtElement, words, wait = 2000) {
     this.txtElement = txtElement;
@@ -69,15 +79,33 @@ const onScroll = event => {
     const val = currLink.getAttribute("href");
     const refElement = document.querySelector(val);
     const logo = document.querySelector(".logo");
+    const my = document.querySelector(".my");
+    const skils = document.querySelector(".skils");
+    const items1 = document.querySelector(".left");
+    const items2 = document.querySelector(".left2");
+    const items3 = document.querySelector(".right");
+    const items4 = document.querySelector(".right2");
 
     if (sections[0].classList.contains("after_block")) {
       logo.innerHTML = "Moon's";
     } else if (sections[1].classList.contains("after_block")) {
       logo.innerHTML = "About";
-    } else if (sections[2].classList.contains("after_block")) {
-      logo.innerHTML = "Product";
+      my.classList.add("animated");
+      skils.classList.add("animated");
     } else {
-      logo.innerHTML = "CONTACT";
+      logo.innerHTML = "Product";
+    }
+
+    if (logo.innerHTML === "Product") {
+      items1.classList.add("animated");
+      items2.classList.add("animated");
+      items3.classList.add("animated");
+      items4.classList.add("animated");
+    } else {
+      items1.classList.remove("animated");
+      items2.classList.remove("animated");
+      items3.classList.remove("animated");
+      items4.classList.remove("animated");
     }
 
     if (
@@ -96,6 +124,8 @@ const onScroll = event => {
     }
   }
 };
+
+setTimeout(firstPage, 2000);
 
 window.addEventListener("load", onScroll);
 
