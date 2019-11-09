@@ -11,7 +11,7 @@ html {
 .wrap {
   max-width: 1920px;
   height: auto;
-  background: url("img/6.jpg") no-repeat;
+  background: url("img/8.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -143,15 +143,31 @@ html {
   height: 100vh;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7), 0 0 15px rgba(0, 0, 0, 0.4),
     0 0 20px rgba(0, 0, 0, 0.2);
+  background: url("img/5.jpg") repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+}
+.ov {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
 }
 
 .my {
+  position: relative;
+  z-index: 1;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 50vh;
-  background: url("img/opacity.png") repeat;
 }
 
 .my h2 {
@@ -161,18 +177,88 @@ html {
   font-weight: 300;
   font-style: italic;
   letter-spacing: 5px;
+  margin: 30px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.my p {
+  width: 60%;
+  text-align: center;
+  font-family: "Caveat";
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 5px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 
 .skils {
+  position: relative;
   width: 100%;
   height: 50vh;
-  background: #2980b9;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 30px;
 }
+
+.skil_card h3 {
+  font-size: 2.4rem;
+  color: white;
+  text-align: center;
+  letter-spacing: 5px;
+  font-family: "Hack";
+}
+
+.skil_card:nth-child(1) h3 {
+  color: #f0652a;
+}
+.skil_card:nth-child(2) h3 {
+  color: #32a9dc;
+}
+.skil_card:nth-child(3) h3 {
+  color: #f0db50;
+}
+.python {
+  background: linear-gradient(110deg, #0669ad 45%, #ffe263 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skil_card ul li {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+}
+
+/* 스킬 */
+
+.skil_items .box:nth-child(1):hover svg {
+  box-shadow: 0 15px 35px rgba(240, 101, 42, 0.3);
+}
+
+.skil_items .box:nth-child(2):hover svg {
+  box-shadow: 0 15px 35px rgba(50, 169, 220, 0.3);
+}
+
+.skil_items .box:nth-child(3):hover svg {
+  box-shadow: 0 15px 35px rgba(240, 219, 80, 0.3);
+}
+
+/* end */
 
 .content {
   width: 100%;
   height: 100vh;
   padding: 0 200px;
+  /* background: url("img/opacity.png") repeat; */
+  background: rgba(0, 0, 0, 0.4);
+  background-attachment: fixed;
+  /* background-size: cover; */
+  background-position: center center;
 }
 
 .content_box {
@@ -218,6 +304,11 @@ html {
 .content_items img {
   width: 100%;
   height: 100%;
+  transition: 0.5s;
+}
+
+.content_items:hover img {
+  opacity: 0;
 }
 
 .content_items:nth-child(1) {
@@ -234,7 +325,7 @@ html {
 }
 .content_items:nth-child(4) {
   grid-column: 1/2;
-  grid-row: 4/7;
+  grid-row: 4/6;
 }
 .content_items:nth-child(5) {
   grid-column: 2/3;
@@ -246,7 +337,7 @@ html {
 }
 .content_items:nth-child(7) {
   grid-column: 1/2;
-  grid-row: 7/8;
+  grid-row: 6/8;
 }
 .content_items:nth-child(8) {
   grid-column: 4/5;
@@ -257,11 +348,14 @@ html {
   grid-row: 5/8;
 }
 
-.product {
-  width: 100%;
-  height: 100vh;
-}
 .contact {
   width: 100%;
   height: 100vh;
+  background: url("img/6.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7), 0 0 8px rgba(0, 0, 0, 0.4),
+    0 0 14px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
