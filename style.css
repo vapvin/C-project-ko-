@@ -33,7 +33,7 @@ html {
   position: absolute;
   width: 100%;
   height: 50vh;
-  background: #fff;
+  background: #000;
   transition: 0.8s;
   z-index: 99999999;
 }
