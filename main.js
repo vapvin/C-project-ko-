@@ -1,11 +1,20 @@
 const covers1 = document.querySelector(".covers1");
 const covers2 = document.querySelector(".covers2");
 const nones = document.querySelector(".none_wrap");
+const homeText = document.querySelector(".home_text");
+const logo = document.querySelector(".logo");
+const nav = document.querySelector(".navigation");
 
 const firstPage = () => {
   covers1.classList.add("cover");
   covers2.classList.add("cover");
   nones.classList.add("block_wrap");
+};
+
+const secondsPage = () => {
+  homeText.classList.add("animated");
+  logo.classList.add("animated");
+  nav.classList.add("animated");
 };
 
 class TypeWriter {
@@ -78,7 +87,6 @@ const onScroll = event => {
     const currLink = sections[i];
     const val = currLink.getAttribute("href");
     const refElement = document.querySelector(val);
-    const logo = document.querySelector(".logo");
     const my = document.querySelector(".my");
     const skils = document.querySelector(".skils");
     const items1 = document.querySelector(".left");
@@ -125,7 +133,8 @@ const onScroll = event => {
   }
 };
 
-setTimeout(firstPage, 2000);
+setTimeout(firstPage, 4000);
+setTimeout(secondsPage, 4500);
 
 window.addEventListener("load", onScroll);
 
