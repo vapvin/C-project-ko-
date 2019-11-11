@@ -97,30 +97,35 @@ html {
   -moz-animation-delay: 0.2s;
   -webkit-animation-delay: 0.2s;
 }
+
 #load div:nth-child(3) {
   animation-delay: 0.4s;
   -o-animation-delay: 0.4s;
   -webkit-animation-delay: 0.4s;
   -webkit-animation-delay: 0.4s;
 }
+
 #load div:nth-child(4) {
   animation-delay: 0.6s;
   -o-animation-delay: 0.6s;
   -moz-animation-delay: 0.6s;
   -webkit-animation-delay: 0.6s;
 }
+
 #load div:nth-child(5) {
   animation-delay: 0.8s;
   -o-animation-delay: 0.8s;
   -moz-animation-delay: 0.8s;
   -webkit-animation-delay: 0.8s;
 }
+
 #load div:nth-child(6) {
   animation-delay: 1s;
   -o-animation-delay: 1s;
   -moz-animation-delay: 1s;
   -webkit-animation-delay: 1s;
 }
+
 #load div:nth-child(7) {
   animation-delay: 1.2s;
   -o-animation-delay: 1.2s;
@@ -133,6 +138,7 @@ html {
     left: 0;
     opacity: 0;
   }
+
   35% {
     left: 41%;
     -moz-transform: rotate(0deg);
@@ -141,6 +147,7 @@ html {
     transform: rotate(0deg);
     opacity: 1;
   }
+
   65% {
     left: 59%;
     -moz-transform: rotate(0deg);
@@ -149,6 +156,7 @@ html {
     transform: rotate(0deg);
     opacity: 1;
   }
+
   100% {
     left: 100%;
     -moz-transform: rotate(-180deg);
@@ -164,18 +172,21 @@ html {
     left: 0;
     opacity: 0;
   }
+
   35% {
     left: 41%;
     -moz-transform: rotate(0deg);
     transform: rotate(0deg);
     opacity: 1;
   }
+
   65% {
     left: 59%;
     -moz-transform: rotate(0deg);
     transform: rotate(0deg);
     opacity: 1;
   }
+
   100% {
     left: 100%;
     -moz-transform: rotate(-180deg);
@@ -189,18 +200,21 @@ html {
     left: 0;
     opacity: 0;
   }
+
   35% {
     left: 41%;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     opacity: 1;
   }
+
   65% {
     left: 59%;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     opacity: 1;
   }
+
   100% {
     left: 100%;
     -webkit-transform: rotate(-180deg);
@@ -214,18 +228,21 @@ html {
     left: 0;
     opacity: 0;
   }
+
   35% {
     left: 41%;
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
     opacity: 1;
   }
+
   65% {
     left: 59%;
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
     opacity: 1;
   }
+
   100% {
     left: 100%;
     -o-transform: rotate(-180deg);
@@ -281,6 +298,7 @@ html {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 14px rgba(0, 0, 0, 0.7),
     0 0 20px rgba(0, 0, 0, 0.4);
 }
+
 .home_text a span {
   position: absolute;
   top: 0;
@@ -292,48 +310,58 @@ html {
   border-radius: 50px;
   box-sizing: border-box;
 }
+
 .home_text a span::before {
   position: absolute;
   top: 10px;
   left: 50%;
   content: "";
-  width: 6px;
-  height: 6px;
-  margin-left: -3px;
-  background-color: #fff;
-  border-radius: 100%;
+  width: 8px;
+  height: 8px;
+  margin-left: -4px;
+
+  border-right: 3px solid #fff;
+  border-left: 3px solid #fff;
   -webkit-animation: sdb10 2s infinite;
   animation: sdb10 2s infinite;
   box-sizing: border-box;
 }
+
 @-webkit-keyframes sdb10 {
   0% {
     -webkit-transform: translate(0, 0);
     opacity: 0;
   }
+
   40% {
     opacity: 1;
   }
+
   80% {
     -webkit-transform: translate(0, 20px);
     opacity: 0;
   }
+
   100% {
     opacity: 0;
   }
 }
+
 @keyframes sdb10 {
   0% {
     transform: translate(0, 0);
     opacity: 0;
   }
+
   40% {
     opacity: 1;
   }
+
   80% {
     transform: translate(0, 20px);
     opacity: 0;
   }
+
   100% {
     opacity: 0;
   }
@@ -424,6 +452,7 @@ html {
   background-attachment: fixed;
   position: relative;
 }
+
 .ov {
   position: absolute;
   top: 0;
@@ -496,12 +525,15 @@ html {
 .skil_card:nth-child(1) h3 {
   color: #f0652a;
 }
+
 .skil_card:nth-child(2) h3 {
   color: #32a9dc;
 }
+
 .skil_card:nth-child(3) h3 {
   color: #f0db50;
 }
+
 .python {
   background: linear-gradient(110deg, #0669ad 45%, #ffe263 100%);
   background-clip: text;
@@ -519,7 +551,7 @@ html {
 .content {
   width: 100%;
   height: 100vh;
-  padding: 10vh 200px 0;
+  padding: 10vh 150px 0;
   background: url("img/15.jpg") repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -548,6 +580,7 @@ html {
   opacity: 0;
   transition: 0.5s;
 }
+
 /* .content_title {
   display: flex;
   align-items: center;
@@ -617,6 +650,7 @@ html {
   grid-column: 1/3;
   grid-row: 1/4;
 }
+
 .content_items:nth-child(2) {
   grid-column: 3/5;
   grid-row: 1/5;
@@ -626,6 +660,7 @@ html {
   grid-column: 1/3;
   grid-row: 4/8;
 }
+
 .content_items:nth-child(4) {
   grid-column: 3/5;
   grid-row: 5/8;
@@ -648,7 +683,7 @@ html {
 }
 
 .contact_text {
-  font-family: "Hack";
+  font-family: "Roboto";
   font-size: 1.4rem;
   display: flex;
   flex-direction: column;
