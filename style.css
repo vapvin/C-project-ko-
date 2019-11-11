@@ -472,7 +472,6 @@ html {
   align-items: center;
   width: 100%;
   height: 60vh;
-  padding: 10vh 0 0;
   transform: translateY(40px);
   opacity: 0;
   transition: 0.5s;
@@ -514,12 +513,26 @@ html {
   transition: 0.5s;
 }
 
+.skil_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  transition: 0.5s;
+  width: 25%;
+  height: 100%;
+  border-radius: 50%;
+}
+
 .skil_card h3 {
   font-size: 2.4rem;
   color: white;
   text-align: center;
   letter-spacing: 5px;
   font-family: "Hack";
+  margin: 0 0 20px 0;
+  transition: 0.5s;
 }
 
 .skil_card:nth-child(1) h3 {
@@ -534,6 +547,25 @@ html {
   color: #f0db50;
 }
 
+.skil_card:hover {
+  background: #121314;
+  box-shadow: 0 4px 13px rgba(240, 101, 42, 0.5);
+  padding: 10px;
+  transform: translate(0, -50px);
+}
+
+.skil_card:nth-child(2):hover {
+  box-shadow: 0 4px 13px rgba(50, 169, 220, 0.5);
+}
+
+.skil_card:nth-child(3):hover {
+  box-shadow: 0 4px 13px rgba(240, 219, 80, 0.5);
+}
+
+.skil_card:nth-child(4):hover {
+  box-shadow: 0 4px 10px rgba(29, 63, 91, 0.7), 0 4px 18px rgba(29, 63, 91, 0.4);
+}
+
 .python {
   background: linear-gradient(110deg, #0669ad 45%, #ffe263 100%);
   background-clip: text;
@@ -541,11 +573,24 @@ html {
   -webkit-text-fill-color: transparent;
 }
 
+.skil_card:hover h3 {
+  font-size: 2.8rem;
+}
+
+.skil_card ul {
+  transition: 0.5s;
+}
+
+.skil_card:hover ul {
+  transform: translate(0, -15px);
+}
+
 .skil_card ul li {
   margin: 10px 0;
   font-size: 1.2rem;
   color: white;
   text-align: center;
+  margin: 10px 0;
 }
 
 .content {
