@@ -28,6 +28,23 @@ html {
   position: relative;
 }
 
+.language {
+  position: absolute;
+  top: 100px;
+  right: 150px;
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.language span {
+  font-size: 1.2rem;
+  margin-left: 7px;
+}
+
 .covers1,
 .covers2 {
   position: absolute;
@@ -75,7 +92,6 @@ html {
   width: 20px;
   height: 36px;
   opacity: 0;
-  font-family: "Hack", Helvetica, Arial, sans-serif;
   animation: move 2s linear infinite;
   -o-animation: move 2s linear infinite;
   -moz-animation: move 2s linear infinite;
@@ -270,7 +286,6 @@ html {
 }
 
 .home_text h1 {
-  font-family: "Roboto";
   width: 600px;
   height: 80px;
   font-size: 2.8rem;
@@ -282,7 +297,6 @@ html {
 }
 
 .home_text p {
-  font-family: "Hack";
   font-weight: 600;
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.7);
@@ -478,7 +492,6 @@ html {
 }
 
 .my h2 {
-  font-family: "Caveat";
   color: #fff;
   font-size: 3rem;
   font-weight: 300;
@@ -491,7 +504,6 @@ html {
 .my p {
   width: 60%;
   text-align: center;
-  font-family: "Caveat";
   color: #fff;
   font-size: 1.5rem;
   font-weight: 300;
@@ -530,7 +542,6 @@ html {
   color: white;
   text-align: center;
   letter-spacing: 5px;
-  font-family: "Hack";
   margin: 0 0 20px 0;
   transition: 0.5s;
 }
@@ -728,7 +739,6 @@ html {
 }
 
 .contact_text {
-  font-family: "Roboto";
   font-size: 1.4rem;
   display: flex;
   flex-direction: column;
